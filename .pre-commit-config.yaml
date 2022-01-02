@@ -1,0 +1,12 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+    -   id: check-json
+    -   id: check-toml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: https://github.com/motet-a/jinjalint
+    rev: "01e0a4d8"
+    hooks:
+    -   id: jinjalint

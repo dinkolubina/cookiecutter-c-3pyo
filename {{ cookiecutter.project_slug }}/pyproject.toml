@@ -4,20 +4,17 @@ log_cli_level = "INFO"
 log_cli_format = "[%(levelname)8s] %(name)12s - %(message)s - (%(filename)s:%(lineno)s)"
 
 [tool.poetry]
-name = "cookiecutter-c-3pyo"
+name = ""
 version = "0.1.0"
-description = "Cookiecutter template for Python projects"
-authors = ["Dinko Lubina <lubinadinko@gmail.com>"]
+description = "{% cookiecutter.project_short_description %}"
+authors = ["{% cookiecutter.full_name %} <{% cookiecutter.email %}>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-mypy = "^0.930"
 pre-commit = "^2.16.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
-pylint = "^2.12.2"
-pytest-cookies = "^0.6.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

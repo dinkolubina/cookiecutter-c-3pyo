@@ -11,6 +11,7 @@
     "use_pylint": "y",
     "use_radon": "y",
     "use_isort": "y",
+    "use_mypy": "y",
     "command_line_interface": ["Click", "Argparse", "No command-line interface"],
     "create_author_file": "y",
     "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
