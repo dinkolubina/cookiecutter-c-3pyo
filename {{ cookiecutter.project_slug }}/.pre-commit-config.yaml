@@ -12,7 +12,7 @@ repos:
     hooks:
     -   id: black
 {%- endif %}
-{%- if cookiecutter.pylint == 'y' -%}
+{%- if cookiecutter.use_pylint == 'y' -%}
 -   repo: https://github.com/PyCQA/pylint
     rev: v2.12.2
     hooks:
@@ -30,7 +30,7 @@ repos:
     hooks:
     -   id: mypy
 {%- endif %}
-{%- if cookiecutter.use_radon == 'y' -%}
+{%- if cookiecutter.use_xenon == 'y' -%}
 -   repo: https://github.com/yunojuno/pre-commit-xenon
     rev: v0.1
     hooks:

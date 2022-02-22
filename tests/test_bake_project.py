@@ -1,4 +1,3 @@
-from contextlib import contextmanager
 import logging
 
 logger = logging.getLogger(__name__)
@@ -6,6 +5,7 @@ logger = logging.getLogger(__name__)
 def test_bake_project_with_defaults(cookies):
     expected_folders = ["tests", "docs", "my_new_python_project", ".gitignore"]
     result = cookies.bake()
+    logger.info(result)
 
     assert result.project_path.is_dir()
     assert result.exit_code == 0
