@@ -6,8 +6,8 @@ log_cli_format = "[%(levelname)8s] %(name)12s - %(message)s - (%(filename)s:%(li
 [tool.poetry]
 name = ""
 version = "0.1.0"
-description = "{% cookiecutter.project_short_description %}"
-authors = ["{% cookiecutter.full_name %} <{% cookiecutter.email %}>"]
+description = "{{ cookiecutter.project_short_description }}"
+authors = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"

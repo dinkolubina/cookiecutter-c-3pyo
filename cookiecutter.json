@@ -9,7 +9,7 @@
     "use_pytest": "y",
     "use_black": "y",
     "use_pylint": "y",
-    "use_radon": "y",
+    "use_xenon": "y",
     "use_isort": "y",
     "use_mypy": "y",
     "command_line_interface": ["Click", "Argparse", "No command-line interface"],
